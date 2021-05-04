@@ -98,6 +98,12 @@
 		<Unit filename="C:/Users/dakot/Documents/cs236/cs236-project-1/cs236-project-1/Lexer.h">
 			<Option target="project_1_main"/>
 		</Unit>
+		<Unit filename="C:/Users/dakot/Documents/cs236/cs236-project-1/cs236-project-1/MatcherAutomaton.cpp">
+			<Option target="project_1_main"/>
+		</Unit>
+		<Unit filename="C:/Users/dakot/Documents/cs236/cs236-project-1/cs236-project-1/MatcherAutomaton.h">
+			<Option target="project_1_main"/>
+		</Unit>
 		<Unit filename="C:/Users/dakot/Documents/cs236/cs236-project-1/cs236-project-1/Token.cpp">
 			<Option target="project_1_main"/>
 		</Unit>

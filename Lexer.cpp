@@ -1,6 +1,10 @@
 #include "Lexer.h"
+#include "Token.h"
+#include "MatcherAutomaton.h"
 #include "ColonAutomaton.h"
 #include "ColonDashAutomaton.h"
+
+#include <vector>
 
 Lexer::Lexer() {
     CreateAutomata();
@@ -11,6 +15,7 @@ Lexer::~Lexer() {
 }
 
 void Lexer::CreateAutomata() {
+    automata.push_back(new MatcherAutomaton(SCHEMES, "Schemes"));
     automata.push_back(new ColonAutomaton());
     automata.push_back(new ColonDashAutomaton());
     // TODO: Add the other needed automata here
@@ -30,7 +35,7 @@ void Lexer::Run(std::string& input) {
 
             input.erase(0, 1);
             if (input.empty()) {
-                //   Token* newToken = new Token(enumEOF, "", lineNumber); // TODO: make enum TokenType {list of token types} in Token.h for enumEOF
+                   Token* newToken = new Token(ENUM_EOF,"", lineNumber); // TODO: make enum TokenType {list of token types} in Token.h for enumEOF
                 tokens.push_back(newToken);
                 return;
             }
@@ -39,7 +44,7 @@ void Lexer::Run(std::string& input) {
                 int inputRead = i->Start(input);
                 if (inputRead > maxRead) {
                     maxRead = inputRead;
-                    maxAutomaton = automata[i];
+                  //  maxAutomaton = automata
                 }
             }
 
@@ -59,7 +64,7 @@ void Lexer::Run(std::string& input) {
         }
 
         if(input.empty()) {
-            //   Token* newToken = new Token(enumEOF, "", lineNumber); // TODO: make enum TokenType {list of token types} in Token.h for enumEOF
+               Token* newToken = new Token(ENUM_EOF, "", lineNumber); // TODO: make enum TokenType {list of token types} in Token.h for enumEOF
             tokens.push_back(newToken);
             return;
         }

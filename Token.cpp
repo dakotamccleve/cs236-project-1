@@ -1,5 +1,54 @@
 #include "Token.h"
 
 Token::Token(TokenType type, std::string description, int line) {
-    // TODO: initialize all member variables
+    this->type = type;
+    this->data = data;
+    this->lineNum = lineNum;
+}
+
+std::string Token::toString() {
+    return "(" + tokenToString(type) + ",\"" + data + "\"," + std::to_string(lineNum) + ")";
+}
+
+std::string Token::tokenToString(TokenType type) {
+    switch(type) {
+        case COMMA:
+            return "COMMA";
+        case PERIOD:
+            return "PERIOD";
+        case Q_MARK:
+            return "Q_MARK";
+        case LEFT_PAREN:
+            return "LEFT_PAREN";
+        case RIGHT_PAREN:
+            return "RIGHT_PAREN";
+        case MULTIPLY:
+            return "MULTIPLY";
+        case ADD:
+            return "ADD";
+        case COLON:
+            return "COLON";
+        case COLON_DASH:
+            return "COLON_DASH";
+        case RULES:
+            return "RULES";
+        case QUERIES:
+            return "QUERIES";
+        case FACTS:
+            return "FACTS";
+        case SCHEMES:
+            return "COLON";
+        case ID:
+            return "ID";
+        case STRING:
+            return "STRING";
+        case COMMENT:
+            return "COMMENT";
+        case UNDEFINED:
+            return "UNDEFINED";
+        case ENUM_EOF:
+            return "EOF";
+        default:
+            return "Uh Oh";
+    }
 }
