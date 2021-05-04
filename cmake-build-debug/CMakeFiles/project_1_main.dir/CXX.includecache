@@ -29,10 +29,16 @@ C:/Users/dakot/Documents/cs236/cs236-project-1/cs236-project-1/Automaton.h
 C:/Users/dakot/Documents/cs236/cs236-project-1/cs236-project-1/Lexer.cpp
 Lexer.h
 C:/Users/dakot/Documents/cs236/cs236-project-1/cs236-project-1/Lexer.h
+MatcherAutomaton.h
+C:/Users/dakot/Documents/cs236/cs236-project-1/cs236-project-1/MatcherAutomaton.h
 ColonAutomaton.h
 C:/Users/dakot/Documents/cs236/cs236-project-1/cs236-project-1/ColonAutomaton.h
 ColonDashAutomaton.h
 C:/Users/dakot/Documents/cs236/cs236-project-1/cs236-project-1/ColonDashAutomaton.h
+vector
+-
+iostream
+-
 
 C:/Users/dakot/Documents/cs236/cs236-project-1/cs236-project-1/Lexer.h
 vector
@@ -46,6 +52,14 @@ C:/Users/dakot/Documents/cs236/cs236-project-1/cs236-project-1/Automaton.h
 Token.h
 C:/Users/dakot/Documents/cs236/cs236-project-1/cs236-project-1/Token.h
 
+C:/Users/dakot/Documents/cs236/cs236-project-1/cs236-project-1/MatcherAutomaton.cpp
+MatcherAutomaton.h
+C:/Users/dakot/Documents/cs236/cs236-project-1/cs236-project-1/MatcherAutomaton.h
+
+C:/Users/dakot/Documents/cs236/cs236-project-1/cs236-project-1/MatcherAutomaton.h
+Automaton.h
+C:/Users/dakot/Documents/cs236/cs236-project-1/cs236-project-1/Automaton.h
+
 C:/Users/dakot/Documents/cs236/cs236-project-1/cs236-project-1/Token.cpp
 Token.h
 C:/Users/dakot/Documents/cs236/cs236-project-1/cs236-project-1/Token.h
@@ -57,4 +71,10 @@ string
 C:/Users/dakot/Documents/cs236/cs236-project-1/cs236-project-1/main.cpp
 Lexer.h
 C:/Users/dakot/Documents/cs236/cs236-project-1/cs236-project-1/Lexer.h
+iostream
+-
+sstream
+-
+fstream
+-
 

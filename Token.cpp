@@ -2,12 +2,12 @@
 
 Token::Token(TokenType type, std::string description, int line) {
     this->type = type;
-    this->data = data;
-    this->lineNum = lineNum;
+    this->data = description;
+    this->newLines = line;
 }
 
 std::string Token::toString() {
-    return "(" + tokenToString(type) + ",\"" + data + "\"," + std::to_string(lineNum) + ")";
+    return "(" + tokenToString(type) + ",\"" + data + "\"," + std::to_string(newLines) + ")";
 }
 
 std::string Token::tokenToString(TokenType type) {
@@ -37,7 +37,7 @@ std::string Token::tokenToString(TokenType type) {
         case FACTS:
             return "FACTS";
         case SCHEMES:
-            return "COLON";
+            return "Schemes";
         case ID:
             return "ID";
         case STRING:

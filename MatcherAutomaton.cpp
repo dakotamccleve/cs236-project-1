@@ -9,6 +9,6 @@ void MatcherAutomaton::S0(const std::string &input) {
         }
     }
     if(isMatch) {
-        inputRead = toMatch.size();
+        inputRead = (int)toMatch.size();
     }
 }

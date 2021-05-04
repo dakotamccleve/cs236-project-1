@@ -11,7 +11,7 @@ class Token
 private:
     TokenType type;
     std::string data;
-    int lineNum;
+    int newLines;
 
 public:
     Token(TokenType type, std::string description, int line);

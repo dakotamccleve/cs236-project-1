@@ -1,10 +1,10 @@
 #include "Lexer.h"
-#include "Token.h"
 #include "MatcherAutomaton.h"
 #include "ColonAutomaton.h"
 #include "ColonDashAutomaton.h"
 
 #include <vector>
+#include <iostream>
 
 Lexer::Lexer() {
     CreateAutomata();
@@ -16,13 +16,26 @@ Lexer::~Lexer() {
 
 void Lexer::CreateAutomata() {
     automata.push_back(new MatcherAutomaton(SCHEMES, "Schemes"));
+    automata.push_back(new MatcherAutomaton(COMMA, ","));
+    automata.push_back(new MatcherAutomaton(PERIOD, "."));
+    automata.push_back(new MatcherAutomaton(Q_MARK, "?"));
+    automata.push_back(new MatcherAutomaton(LEFT_PAREN, "("));
+    automata.push_back(new MatcherAutomaton(RIGHT_PAREN, ")"));
+    automata.push_back(new MatcherAutomaton(MULTIPLY, "*"));
+    automata.push_back(new MatcherAutomaton(ADD, "+"));
+    automata.push_back(new MatcherAutomaton(RULES, "Rules"));
+    automata.push_back(new MatcherAutomaton(QUERIES, "Queries"));
+    automata.push_back(new MatcherAutomaton(FACTS, "Facts"));
     automata.push_back(new ColonAutomaton());
     automata.push_back(new ColonDashAutomaton());
-    // TODO: Add the other needed automata here
+    // TODO: Build and add ID automaton
+    // TODO: build String automaton
+    // TODO: build comment block and line comment automata
+    // TODO: build undefined Automata
 }
 
 void Lexer::Run(std::string& input) {
-    // TODO: convert this pseudo-code with the algorithm into actual C++ code
+
     int lineNumber = 1;
 
     while(!input.empty()) {
@@ -35,16 +48,16 @@ void Lexer::Run(std::string& input) {
 
             input.erase(0, 1);
             if (input.empty()) {
-                   Token* newToken = new Token(ENUM_EOF,"", lineNumber); // TODO: make enum TokenType {list of token types} in Token.h for enumEOF
+                   Token* newToken = new Token(ENUM_EOF,"", lineNumber);
                 tokens.push_back(newToken);
                 return;
             }
         }
-            for(auto & i : automata) {
-                int inputRead = i->Start(input);
+            for(unsigned int i = 0; i < automata.size(); i++) {
+                int inputRead = automata.at(i)->Start(input);
                 if (inputRead > maxRead) {
                     maxRead = inputRead;
-                  //  maxAutomaton = automata
+                  maxAutomaton = automata[i];
                 }
             }
 
@@ -56,7 +69,7 @@ void Lexer::Run(std::string& input) {
 
             else {
                 maxRead = 1;
-                Token *newToken = maxAutomaton->CreateToken(input.substr(0,maxRead), lineNumber);
+                Token *newToken = maxAutomaton->CreateToken(UNDEFINED,input.substr(0,maxRead), lineNumber);
                 tokens.push_back(newToken);
             }
 
@@ -64,9 +77,15 @@ void Lexer::Run(std::string& input) {
         }
 
         if(input.empty()) {
-               Token* newToken = new Token(ENUM_EOF, "", lineNumber); // TODO: make enum TokenType {list of token types} in Token.h for enumEOF
+               Token* newToken = new Token(ENUM_EOF, "", lineNumber);
             tokens.push_back(newToken);
             return;
         }
+}
 
+void Lexer::printTokens() {
+    for(int i = 0; i < (int)tokens.size(); i++) {
+        std::cout << tokens.at(i)->toString() << std::endl;
+    }
+    std::cout << "Total Tokens = " << (int)tokens.size();
 }
