@@ -1,8 +1,11 @@
 #ifndef LEXER_H
 #define LEXER_H
 #include <vector>
+#include <string>
+#include <cctype>
 #include "Automaton.h"
 #include "Token.h"
+
 
 class Lexer
 {
@@ -11,8 +14,6 @@ private:
     std::vector<Token*> tokens;
 
     void CreateAutomata();
-
-    // TODO: add any other private methods here (if needed)
 
 public:
     Lexer();

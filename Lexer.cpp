@@ -18,41 +18,50 @@ void Lexer::CreateAutomata() {
 
 void Lexer::Run(std::string& input) {
     // TODO: convert this pseudo-code with the algorithm into actual C++ code
-    /*
-    set lineNumber to 1
-    // While there are more characters to tokenize
-    loop while input.size() > 0 {
-        set maxRead to 0
-        set maxAutomaton to the first automaton in automata
+    int lineNumber = 1;
 
-        // TODO: you need to handle whitespace inbetween tokens
+    while(!input.empty()) {
+        int maxRead = 0;
+        Automaton* maxAutomaton = automata[0];
+        while(isspace(input.at(0))) {
+            if (input.at(0) == '\n') {
+                lineNumber++;
+            }
 
-        // Here is the "Parallel" part of the algorithm
-        //   Each automaton runs with the same input
-        foreach automaton in automata {
-            inputRead = automaton.Start(input)
-            if (inputRead > maxRead) {
-                set maxRead to inputRead
-                set maxAutomaton to automaton
+            input.erase(0, 1);
+            if (input.empty()) {
+                //   Token* newToken = new Token(enumEOF, "", lineNumber); // TODO: make enum TokenType {list of token types} in Token.h for enumEOF
+                tokens.push_back(newToken);
+                return;
             }
         }
-        // Here is the "Max" part of the algorithm
-        if maxRead > 0 {
-            set newToken to maxAutomaton.CreateToken(...)
-                increment lineNumber by maxAutomaton.NewLinesRead()
-                add newToken to collection of all tokens
+            for(auto & i : automata) {
+                int inputRead = i->Start(input);
+                if (inputRead > maxRead) {
+                    maxRead = inputRead;
+                    maxAutomaton = automata[i];
+                }
+            }
+
+            if(maxRead > 0) {
+                Token *newToken = maxAutomaton->CreateToken(input.substr(0, maxRead), lineNumber);
+                lineNumber += maxAutomaton->NewLinesRead();
+                tokens.push_back(newToken);
+            }
+
+            else {
+                maxRead = 1;
+                Token *newToken = maxAutomaton->CreateToken(input.substr(0,maxRead), lineNumber);
+                tokens.push_back(newToken);
+            }
+
+            input.erase(0, maxRead);
         }
-        // No automaton accepted input
-        // Create single character undefined token
-        else {
-            set maxRead to 1
-                set newToken to a  new undefined Token
-                (with first character of input)
-                add newToken to collection of all tokens
+
+        if(input.empty()) {
+            //   Token* newToken = new Token(enumEOF, "", lineNumber); // TODO: make enum TokenType {list of token types} in Token.h for enumEOF
+            tokens.push_back(newToken);
+            return;
         }
-        // Update `input` by removing characters read to create Token
-        remove maxRead characters from input
-    }
-    add end of file token to all tokens
-    */
+
 }
