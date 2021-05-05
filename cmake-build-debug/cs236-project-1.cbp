@@ -92,6 +92,18 @@
 		<Unit filename="C:/Users/dakot/Documents/cs236/cs236-project-1/cs236-project-1/ColonDashAutomaton.h">
 			<Option target="project_1_main"/>
 		</Unit>
+		<Unit filename="C:/Users/dakot/Documents/cs236/cs236-project-1/cs236-project-1/CommentAutomaton.cpp">
+			<Option target="project_1_main"/>
+		</Unit>
+		<Unit filename="C:/Users/dakot/Documents/cs236/cs236-project-1/cs236-project-1/CommentAutomaton.h">
+			<Option target="project_1_main"/>
+		</Unit>
+		<Unit filename="C:/Users/dakot/Documents/cs236/cs236-project-1/cs236-project-1/IDAutomaton.cpp">
+			<Option target="project_1_main"/>
+		</Unit>
+		<Unit filename="C:/Users/dakot/Documents/cs236/cs236-project-1/cs236-project-1/IDAutomaton.h">
+			<Option target="project_1_main"/>
+		</Unit>
 		<Unit filename="C:/Users/dakot/Documents/cs236/cs236-project-1/cs236-project-1/Lexer.cpp">
 			<Option target="project_1_main"/>
 		</Unit>
@@ -102,6 +114,12 @@
 			<Option target="project_1_main"/>
 		</Unit>
 		<Unit filename="C:/Users/dakot/Documents/cs236/cs236-project-1/cs236-project-1/MatcherAutomaton.h">
+			<Option target="project_1_main"/>
+		</Unit>
+		<Unit filename="C:/Users/dakot/Documents/cs236/cs236-project-1/cs236-project-1/StringAutomaton.cpp">
+			<Option target="project_1_main"/>
+		</Unit>
+		<Unit filename="C:/Users/dakot/Documents/cs236/cs236-project-1/cs236-project-1/StringAutomaton.h">
 			<Option target="project_1_main"/>
 		</Unit>
 		<Unit filename="C:/Users/dakot/Documents/cs236/cs236-project-1/cs236-project-1/Token.cpp">

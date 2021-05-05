@@ -11,18 +11,36 @@ CMakeFiles/project_1_main.dir/ColonDashAutomaton.cpp.obj: ../ColonDashAutomaton.
 CMakeFiles/project_1_main.dir/ColonDashAutomaton.cpp.obj: ../ColonDashAutomaton.h
 CMakeFiles/project_1_main.dir/ColonDashAutomaton.cpp.obj: ../Token.h
 
+CMakeFiles/project_1_main.dir/CommentAutomaton.cpp.obj: ../Automaton.h
+CMakeFiles/project_1_main.dir/CommentAutomaton.cpp.obj: ../CommentAutomaton.cpp
+CMakeFiles/project_1_main.dir/CommentAutomaton.cpp.obj: ../CommentAutomaton.h
+CMakeFiles/project_1_main.dir/CommentAutomaton.cpp.obj: ../Token.h
+
+CMakeFiles/project_1_main.dir/IDAutomaton.cpp.obj: ../Automaton.h
+CMakeFiles/project_1_main.dir/IDAutomaton.cpp.obj: ../IDAutomaton.cpp
+CMakeFiles/project_1_main.dir/IDAutomaton.cpp.obj: ../IDAutomaton.h
+CMakeFiles/project_1_main.dir/IDAutomaton.cpp.obj: ../Token.h
+
 CMakeFiles/project_1_main.dir/Lexer.cpp.obj: ../Automaton.h
 CMakeFiles/project_1_main.dir/Lexer.cpp.obj: ../ColonAutomaton.h
 CMakeFiles/project_1_main.dir/Lexer.cpp.obj: ../ColonDashAutomaton.h
+CMakeFiles/project_1_main.dir/Lexer.cpp.obj: ../CommentAutomaton.h
+CMakeFiles/project_1_main.dir/Lexer.cpp.obj: ../IDAutomaton.h
 CMakeFiles/project_1_main.dir/Lexer.cpp.obj: ../Lexer.cpp
 CMakeFiles/project_1_main.dir/Lexer.cpp.obj: ../Lexer.h
 CMakeFiles/project_1_main.dir/Lexer.cpp.obj: ../MatcherAutomaton.h
+CMakeFiles/project_1_main.dir/Lexer.cpp.obj: ../StringAutomaton.h
 CMakeFiles/project_1_main.dir/Lexer.cpp.obj: ../Token.h
 
 CMakeFiles/project_1_main.dir/MatcherAutomaton.cpp.obj: ../Automaton.h
 CMakeFiles/project_1_main.dir/MatcherAutomaton.cpp.obj: ../MatcherAutomaton.cpp
 CMakeFiles/project_1_main.dir/MatcherAutomaton.cpp.obj: ../MatcherAutomaton.h
 CMakeFiles/project_1_main.dir/MatcherAutomaton.cpp.obj: ../Token.h
+
+CMakeFiles/project_1_main.dir/StringAutomaton.cpp.obj: ../Automaton.h
+CMakeFiles/project_1_main.dir/StringAutomaton.cpp.obj: ../StringAutomaton.cpp
+CMakeFiles/project_1_main.dir/StringAutomaton.cpp.obj: ../StringAutomaton.h
+CMakeFiles/project_1_main.dir/StringAutomaton.cpp.obj: ../Token.h
 
 CMakeFiles/project_1_main.dir/Token.cpp.obj: ../Token.cpp
 CMakeFiles/project_1_main.dir/Token.cpp.obj: ../Token.h

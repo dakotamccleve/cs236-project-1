@@ -37,7 +37,7 @@ std::string Token::tokenToString(TokenType type) {
         case FACTS:
             return "FACTS";
         case SCHEMES:
-            return "Schemes";
+            return "SCHEMES";
         case ID:
             return "ID";
         case STRING:

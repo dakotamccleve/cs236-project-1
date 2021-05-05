@@ -2,6 +2,9 @@
 #include "MatcherAutomaton.h"
 #include "ColonAutomaton.h"
 #include "ColonDashAutomaton.h"
+#include "IDAutomaton.h"
+#include "StringAutomaton.h"
+#include "CommentAutomaton.h"
 
 #include <vector>
 #include <iostream>
@@ -26,12 +29,11 @@ void Lexer::CreateAutomata() {
     automata.push_back(new MatcherAutomaton(RULES, "Rules"));
     automata.push_back(new MatcherAutomaton(QUERIES, "Queries"));
     automata.push_back(new MatcherAutomaton(FACTS, "Facts"));
+    automata.push_back(new IDAutomaton());
     automata.push_back(new ColonAutomaton());
     automata.push_back(new ColonDashAutomaton());
-    // TODO: Build and add ID automaton
-    // TODO: build String automaton
-    // TODO: build comment block and line comment automata
-    // TODO: build undefined Automata
+    automata.push_back(new StringAutomaton());
+    automata.push_back(new CommentAutomaton());
 }
 
 void Lexer::Run(std::string& input) {

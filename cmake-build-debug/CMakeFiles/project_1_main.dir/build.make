@@ -154,6 +154,45 @@ CMakeFiles/project_1_main.dir/MatcherAutomaton.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_1_main.dir/MatcherAutomaton.cpp.s"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\dakot\Documents\cs236\cs236-project-1\cs236-project-1\MatcherAutomaton.cpp -o CMakeFiles\project_1_main.dir\MatcherAutomaton.cpp.s
 
+CMakeFiles/project_1_main.dir/IDAutomaton.cpp.obj: CMakeFiles/project_1_main.dir/flags.make
+CMakeFiles/project_1_main.dir/IDAutomaton.cpp.obj: ../IDAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dakot\Documents\cs236\cs236-project-1\cs236-project-1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/project_1_main.dir/IDAutomaton.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project_1_main.dir\IDAutomaton.cpp.obj -c C:\Users\dakot\Documents\cs236\cs236-project-1\cs236-project-1\IDAutomaton.cpp
+
+CMakeFiles/project_1_main.dir/IDAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_1_main.dir/IDAutomaton.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\dakot\Documents\cs236\cs236-project-1\cs236-project-1\IDAutomaton.cpp > CMakeFiles\project_1_main.dir\IDAutomaton.cpp.i
+
+CMakeFiles/project_1_main.dir/IDAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_1_main.dir/IDAutomaton.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\dakot\Documents\cs236\cs236-project-1\cs236-project-1\IDAutomaton.cpp -o CMakeFiles\project_1_main.dir\IDAutomaton.cpp.s
+
+CMakeFiles/project_1_main.dir/StringAutomaton.cpp.obj: CMakeFiles/project_1_main.dir/flags.make
+CMakeFiles/project_1_main.dir/StringAutomaton.cpp.obj: ../StringAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dakot\Documents\cs236\cs236-project-1\cs236-project-1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/project_1_main.dir/StringAutomaton.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project_1_main.dir\StringAutomaton.cpp.obj -c C:\Users\dakot\Documents\cs236\cs236-project-1\cs236-project-1\StringAutomaton.cpp
+
+CMakeFiles/project_1_main.dir/StringAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_1_main.dir/StringAutomaton.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\dakot\Documents\cs236\cs236-project-1\cs236-project-1\StringAutomaton.cpp > CMakeFiles\project_1_main.dir\StringAutomaton.cpp.i
+
+CMakeFiles/project_1_main.dir/StringAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_1_main.dir/StringAutomaton.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\dakot\Documents\cs236\cs236-project-1\cs236-project-1\StringAutomaton.cpp -o CMakeFiles\project_1_main.dir\StringAutomaton.cpp.s
+
+CMakeFiles/project_1_main.dir/CommentAutomaton.cpp.obj: CMakeFiles/project_1_main.dir/flags.make
+CMakeFiles/project_1_main.dir/CommentAutomaton.cpp.obj: ../CommentAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dakot\Documents\cs236\cs236-project-1\cs236-project-1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/project_1_main.dir/CommentAutomaton.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project_1_main.dir\CommentAutomaton.cpp.obj -c C:\Users\dakot\Documents\cs236\cs236-project-1\cs236-project-1\CommentAutomaton.cpp
+
+CMakeFiles/project_1_main.dir/CommentAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_1_main.dir/CommentAutomaton.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\dakot\Documents\cs236\cs236-project-1\cs236-project-1\CommentAutomaton.cpp > CMakeFiles\project_1_main.dir\CommentAutomaton.cpp.i
+
+CMakeFiles/project_1_main.dir/CommentAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_1_main.dir/CommentAutomaton.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\dakot\Documents\cs236\cs236-project-1\cs236-project-1\CommentAutomaton.cpp -o CMakeFiles\project_1_main.dir\CommentAutomaton.cpp.s
+
 # Object files for target project_1_main
 project_1_main_OBJECTS = \
 "CMakeFiles/project_1_main.dir/main.cpp.obj" \
@@ -161,7 +200,10 @@ project_1_main_OBJECTS = \
 "CMakeFiles/project_1_main.dir/ColonDashAutomaton.cpp.obj" \
 "CMakeFiles/project_1_main.dir/Lexer.cpp.obj" \
 "CMakeFiles/project_1_main.dir/Token.cpp.obj" \
-"CMakeFiles/project_1_main.dir/MatcherAutomaton.cpp.obj"
+"CMakeFiles/project_1_main.dir/MatcherAutomaton.cpp.obj" \
+"CMakeFiles/project_1_main.dir/IDAutomaton.cpp.obj" \
+"CMakeFiles/project_1_main.dir/StringAutomaton.cpp.obj" \
+"CMakeFiles/project_1_main.dir/CommentAutomaton.cpp.obj"
 
 # External object files for target project_1_main
 project_1_main_EXTERNAL_OBJECTS =
@@ -172,11 +214,14 @@ project_1_main.exe: CMakeFiles/project_1_main.dir/ColonDashAutomaton.cpp.obj
 project_1_main.exe: CMakeFiles/project_1_main.dir/Lexer.cpp.obj
 project_1_main.exe: CMakeFiles/project_1_main.dir/Token.cpp.obj
 project_1_main.exe: CMakeFiles/project_1_main.dir/MatcherAutomaton.cpp.obj
+project_1_main.exe: CMakeFiles/project_1_main.dir/IDAutomaton.cpp.obj
+project_1_main.exe: CMakeFiles/project_1_main.dir/StringAutomaton.cpp.obj
+project_1_main.exe: CMakeFiles/project_1_main.dir/CommentAutomaton.cpp.obj
 project_1_main.exe: CMakeFiles/project_1_main.dir/build.make
 project_1_main.exe: CMakeFiles/project_1_main.dir/linklibs.rsp
 project_1_main.exe: CMakeFiles/project_1_main.dir/objects1.rsp
 project_1_main.exe: CMakeFiles/project_1_main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\dakot\Documents\cs236\cs236-project-1\cs236-project-1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable project_1_main.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\dakot\Documents\cs236\cs236-project-1\cs236-project-1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable project_1_main.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\project_1_main.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
