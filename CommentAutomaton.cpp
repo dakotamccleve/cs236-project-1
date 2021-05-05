@@ -36,10 +36,10 @@ void CommentAutomaton::S1(const std::string &input) {
 
 void CommentAutomaton::S2(const std::string &input) {
     while (inputRead != (int)input.size() && input[inputRead] != '|') {
-        inputRead++;
         if(input[inputRead] == '\n') {
             this->newLines++;
         }
+        inputRead++;
     }
     if (input[inputRead] == '|') {
         inputRead++;
